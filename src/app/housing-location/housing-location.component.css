@@ -1,0 +1,58 @@
+/* Put these styles in: src/app/housing-location/housing-location.component.css */
+
+.listing {
+    background: var(--accent-color);
+    border-radius: 30px;
+    padding-bottom: 30px;
+  }
+  .listing-heading {
+    color: var(--primary-color);
+    padding: 10px 20px 0 20px;
+  }
+  .listing-photo {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+  }
+  .listing-location {
+    padding: 10px 20px 20px 20px;
+  }
+  .listing-location::before {
+    content: url("/assets/location-pin.svg") / "";
+  }
+  
+  section.listing a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  section.listing a::after {
+    content: "\203A";
+    margin-left: 5px;
+  }
+  styles.css
+  /* Put these styles in: src/styles.css */
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+  }
+  :root {
+    --primary-color: #605DC8;
+    --secondary-color: #8B89E6;
+    --accent-color: #e8e7fa;
+    --shadow-color: #E8E8E8;
+  }
+  
+  button.primary {
+    padding: 10px;
+    border: solid 1px var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+  }
